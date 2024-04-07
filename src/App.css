@@ -1,38 +1,177 @@
-.App {
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
   text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-group {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label input {
+  margin-right: 10px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* for a read  */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.task-date {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  font-size: 12px;
+}
+
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.task {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.delete-btn {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 5px;
+  background-color: #dc3545;
+  color: #fff;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.update-btn{
+  position: absolute;
+  top: 5px;
+  left: 65px;
+  padding: 5px;
+  background-color: #354bdc;
+  color: #fff;
+  cursor: pointer;
+}
+
+.status-checkbox {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.task-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.task-date {
+  font-size: 12px;
+}
+
+/* for a option  */
+
+.option-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.option-link {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.option-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.option-button:hover {
+  background-color: #0056b3;
+}
+
+.office {
+  background-color: red;
+}
+
+.personal {
+  background-color: yellow;
+}
+
+.family {
+  background-color: green;
+}
+
+.friends {
+  background-color: cyan;
+}
+
+.other {
+  background-color: gray;
+}
+
+.task.completed {
+  background-color: white;
+}
+
+.checked{
+  background-color: white;
 }
